@@ -22,6 +22,19 @@
     width: 320px;
     height: 477px;
   }
+
+  @include mobile600 {
+    width: 270px;
+    height: 427px;
+  }
+  @include mobile500 {
+    width: 220px;
+    height: 377px;
+  }
+  @include mobile400 {
+    width: 180px;
+    height: 327px;
+  }
   @include mobile {
     width: 155px;
     height: 230px;

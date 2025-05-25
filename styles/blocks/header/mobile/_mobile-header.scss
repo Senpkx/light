@@ -32,8 +32,17 @@
   box-sizing: border-box;
   cursor: pointer;
   @include mobile {
-    width: 170px;
+    width: 140px;
     height: 30px;
+  }
+  @include mobile600 {
+    width: 320px;
+  }
+  @include mobile500 {
+    width: 270px;
+  }
+  @include mobile400 {
+    width: 220px;
   }
 }
 .mobile-search-icon {

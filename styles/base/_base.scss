@@ -9,6 +9,16 @@
   @include tablet {
     width: 680px;
   }
+
+  @include mobile600 {
+    width: 580px;
+  }
+  @include mobile500 {
+    width: 480px;
+  }
+  @include mobile400 {
+    width: 380px;
+  }
   @include mobile {
     width: 320px;
   }

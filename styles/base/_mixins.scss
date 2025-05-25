@@ -9,6 +9,21 @@
     @content;
   }
 }
+@mixin mobile600 {
+  @media screen and (max-width: 670px) {
+    @content;
+  }
+}
+@mixin mobile500 {
+  @media screen and (max-width: 570px) {
+    @content;
+  }
+}
+@mixin mobile400 {
+  @media screen and (max-width: 470px) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media screen and (max-width: 390px) {

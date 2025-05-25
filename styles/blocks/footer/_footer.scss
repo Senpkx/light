@@ -20,7 +20,7 @@ footer {
     margin: 50px 0;
   }
 
-  @include mobile {
+  @include mobile600 {
     display: flex;
     flex-direction: column;
     margin: 40px 0 0 0;
@@ -41,7 +41,7 @@ footer {
       width: 180px;
       height: 46px;
     }
-    @include mobile {
+    @include mobile600 {
       position: static;
     }
   }
@@ -63,7 +63,7 @@ footer {
     }
   }
 
-  @include mobile {
+  @include mobile600 {
     bottom: 30px;
     left: 0;
     width: 321px;
@@ -78,7 +78,7 @@ footer {
   > p {
     margin: 20px 0 38px 0;
 
-    @include mobile {
+    @include mobile600 {
       margin: 20px 0 30px 0;
     }
   }
@@ -88,7 +88,7 @@ footer {
     top: 80px;
   }
 
-  @include mobile {
+  @include mobile600 {
     position: static;
     margin-top: 35px;
   }
@@ -100,7 +100,7 @@ footer {
   p:nth-child(2) {
     padding: 20px 0 25px 0;
   }
-  @include mobile {
+  @include mobile600 {
     margin-top: 0;
   }
 }
@@ -113,7 +113,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    @include mobile {
+    @include mobile600 {
       gap: 20px;
     }
     > li {
@@ -122,7 +122,7 @@ footer {
       }
     }
   }
-  @include mobile {
+  @include mobile600 {
     margin-top: 30px;
   }
 }
@@ -139,7 +139,7 @@ footer {
     text-align: start;
   }
 
-  @include mobile {
+  @include mobile600 {
     position: static;
     bottom: 0;
     margin-top: 30px;
@@ -155,7 +155,7 @@ footer {
     margin-top: 98px 0 16px 0;
     justify-self: flex-start;
   }
-  @include mobile {
+  @include mobile600 {
     bottom: 38px;
   }
 }
