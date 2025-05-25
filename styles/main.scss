@@ -1,0 +1,13 @@
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/vars";
+@import "./base/base";
+
+@import "./blocks/header/bar-info";
+@import "./blocks/header/search-basket";
+@import "./blocks/header/header-top";
+@import "./blocks/header/mobile/mobile-header";
+@import "./blocks/header/mobile/burger";
+@import "./blocks/main/cards";
+@import "./blocks/main/card";
+@import "./blocks/footer/footer";

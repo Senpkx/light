@@ -1,0 +1,60 @@
+.burger {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  top: 24px;
+  right: 52px;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.line {
+  height: 2px;
+  width: 24px;
+  background-color: $dark;
+  transition: transform 0.3s ease;
+}
+
+.line-1 {
+  position: absolute;
+  top: 14px;
+}
+
+.line-3 {
+  position: absolute;
+  bottom: 14px;
+}
+
+.btnActive {
+  .line {
+    background-color: $white;
+  }
+  .line-1,
+  .line-3 {
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  .line-1 {
+    top: 19px;
+    transform: rotate(45deg);
+  }
+  .line-2 {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .line-3 {
+    bottom: 19px;
+    transform: rotate(-45deg);
+  }
+  .line {
+    width: 30px;
+  }
+}

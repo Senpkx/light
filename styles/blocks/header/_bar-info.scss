@@ -1,0 +1,24 @@
+.bar-info {
+  background-color: $ligth-dark;
+  padding: 12px 0;
+  @include tablet {
+    display: none;
+  }
+}
+
+.bar-info-content {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    color: $white;
+    font-weight: $regular;
+  }
+  > button {
+    background-color: $ligth-dark;
+    color: $white;
+  }
+}
+
+.bar-info a:nth-child(2) {
+  padding: 0 70px;
+}

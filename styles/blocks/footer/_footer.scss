@@ -1,0 +1,168 @@
+footer {
+  background-color: $footer-back;
+  color: $ligth-gray;
+}
+@include tablet {
+  .mobile-contact,
+  .mobile-services {
+    margin-top: 80px;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.5fr 1fr;
+  margin: 60px 0;
+
+  @include tablet {
+    position: relative;
+    grid-template-columns: 1.2fr 1.3fr 0.7fr;
+    margin: 50px 0;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    height: 867px;
+  }
+}
+
+.logo-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  > img {
+    width: 240px;
+    height: 62px;
+    @include tablet {
+      position: absolute;
+      top: 0;
+      width: 180px;
+      height: 46px;
+    }
+    @include mobile {
+      position: static;
+    }
+  }
+}
+.policy {
+  font-family: $roboto;
+  color: $gray;
+  a {
+    color: $gray;
+  }
+  @include tablet {
+    position: absolute;
+    bottom: 0;
+    right: 44px;
+    width: 382px;
+    height: 63px;
+    br {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    bottom: 30px;
+    left: 0;
+    width: 321px;
+    height: 84px;
+  }
+}
+
+.address {
+  h3 {
+    color: $white;
+  }
+  > p {
+    margin: 20px 0 38px 0;
+
+    @include mobile {
+      margin: 20px 0 30px 0;
+    }
+  }
+  @include tablet {
+    position: absolute;
+    left: 0;
+    top: 80px;
+  }
+
+  @include mobile {
+    position: static;
+    margin-top: 35px;
+  }
+}
+.contact {
+  > h3 {
+    color: $white;
+  }
+  p:nth-child(2) {
+    padding: 20px 0 25px 0;
+  }
+  @include mobile {
+    margin-top: 0;
+  }
+}
+.services {
+  > h3 {
+    color: $white;
+    margin-bottom: 20px;
+  }
+  > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include mobile {
+      gap: 20px;
+    }
+    > li {
+      > a {
+        color: $ligth-gray;
+      }
+    }
+  }
+  @include mobile {
+    margin-top: 30px;
+  }
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: end;
+  color: $gray;
+  @include tablet {
+    position: absolute;
+    bottom: 180px;
+    text-align: start;
+  }
+
+  @include mobile {
+    position: static;
+    bottom: 0;
+    margin-top: 30px;
+  }
+}
+.payment-cards {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  gap: 33px;
+  margin-top: 72px;
+  @include tablet {
+    margin-top: 98px 0 16px 0;
+    justify-self: flex-start;
+  }
+  @include mobile {
+    bottom: 38px;
+  }
+}
+.mir,
+.visa {
+  height: 13px;
+}
+.master-card {
+  height: 29px;
+}

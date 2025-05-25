@@ -1,0 +1,28 @@
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.header-top ul {
+  display: flex;
+  text-transform: uppercase;
+  a {
+    color: $ligth-dark;
+  }
+  margin-left: 115px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.header-top li:nth-child(2) {
+  padding: 0 100px;
+}
+
+.logo {
+  @include mobile {
+    width: 141px;
+    height: 36px;
+  }
+}
